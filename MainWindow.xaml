@@ -1,0 +1,57 @@
+﻿<Window x:Class="WpfLab_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLab_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="350
+        ">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border 
+            Grid.Row="0"
+            Background="AliceBlue"
+            BorderBrush="Gray"
+            BorderThickness="3 3 1 1" Margin="2 0 2 2">
+            <TextBlock
+                x:Name="textBlock"
+                Height="60"
+                   FontFamily="Arial"
+                   FontSize="30"
+                   TextAlignment="Right"
+                VerticalAlignment="Stretch"
+                Padding="20"
+/>
+        </Border>
+        <UniformGrid Rows="6" Columns="4" Grid.Row="1">
+            <Button Content="%" FontSize="30" FontFamily="Arial"/>
+            <Button Content="CE" FontSize="30" FontFamily="Arial"/>
+            <Button Content="C" FontSize="30" FontFamily="Arial"/>
+            <Button Content="←" FontSize="30" FontFamily="Arial"/>
+            <Button Content="1/x" FontSize="30" FontFamily="Arial"/>
+            <Button Content="x²" FontSize="30" FontFamily="Arial"/>
+            <Button Content="√" FontSize="30" FontFamily="Arial"/>
+            <Button Content="÷" FontSize="30" FontFamily="Arial"/>
+            <Button Content="7" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="8" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="9" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="×" FontSize="30" FontFamily="Arial"/>
+            <Button Content="4" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="5" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="6" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="-" FontSize="30" FontFamily="Arial" />
+            <Button Content="1" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="2" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="3" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="+" FontSize="30" FontFamily="Arial" />
+            <Button Content="±" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="0" FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="." FontSize="30" FontFamily="Arial" Background="White"/>
+            <Button Content="=" FontSize="30" FontFamily="Arial"/>
+        </UniformGrid>
+    </Grid>
+</Window>
